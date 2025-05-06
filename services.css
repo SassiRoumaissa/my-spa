@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    
+    /* تنسيق الـ header */
+    header {
+      width: 100%;
+      height: 15vh; /* تحديد ارتفاع الـ header */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+     
+    }
+    
+    /* تنسيق الشعار */
+    .logo {
+      height: 420px;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+    nav.info{
+      height: auto;
+      width: 70%;
+     
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      /* background-color:transparent; */
+    }
+    
+    /* تنسيق الروابط داخل الـ header */
+    nav.info a {
+      text-decoration: none;
+      color:#36073d;
+      font-size: 18px;
+      margin: 0 40px;
+    
+      font-family: 'Montserrat', sans-serif;
+    
+     font-weight: bold;
+    
+      transition: color 0.5s ease;
+    }
+    
+    /* تغيير تنسيق الروابط عند التمرير */
+    nav.info a:hover {
+      color: #fff;
+       text-decoration: underline;
+       transform: scale(1.03);
+       
+     
+    }
+    nav.icons a:hover {
+      color: #fff;
+      
+    
+     
+    }
+    nav.icons a {
+      margin: 10px;
+      text-decoration: none;
+      
+      font-size: 18px;
+    }
+    nav.icons {
+      margin-left: 100px;
+      color:#350432;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    /* .icons i {
+      color: darkmagenta;
+    } */
+    nav.icons a i {
+      margin-right: 5px;
+      color: darkmagenta;
+    }
+    .icons i:hover{
+      color: rgb(255, 255, 255);
+      }
+    
+    section.shop-title{
+      background-color:hotpink;
+    
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-image: url(../images/image-30.jpg);
+     
+    }
+    .shop-title {
+      position: relative;
+      background-image: url(../images/image-30.jpg);
+     background-size: cover;
+      background-position: center;
+      border-top: 5px double #501d58af; 
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 3px 3px #00000041;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    
+    .shop-title .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  
+      z-index: 1;
+    }
+    
+    .shop-title h1 {
+      position: relative;
+      z-index: 2;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 3rem;
+      color:#541f5c/* غيّرت اللون للأبيض ليبان على الخلفية الغامقة */
+    }
+  .footer {
+    background-color: #f2e7f3;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #55235e;
+    border-top: 5px double #501d58af; 
+     background-image: url(../images/image-30.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-column {
+    flex: 1 1 250px;
+    min-width: 250px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #3e1547;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-column ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column .post {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .footer-column.post:hover{
+    text-decoration: underline;
+  }
+  
+  .footer-column .post img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .social-icons i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #541f5c;
+    transition: transform 0.3s ease;
+  }
+  .social-icons i:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 1px solid #d5c5dc;
+    padding-top: 20px;
+    background-image: url(../images/image-30.jpg);
+    background-position: center;
+  }
+  .footer-column p i{
+    margin-top: 20px;
+  }
+  
+
+
+ .title-prd {
+    margin-top: 20px;
+   color: #541f5c;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .filter-bar {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .filter-bar button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color:#d66e8a3d;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .filter-bar button:hover {
+    background-color: #55235e;
+    color: white;
+  }
+    
+    .services-pro {
+        padding: 60px 20px;
+        background-color: #fffaf6;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+      }
+      
+      .section-title {
+        font-size: 36px;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        color: #50103a;
+        margin-bottom: 40px;
+      }
+      
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .service-card {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      
+      .service-card:hover {
+        transform: translateY(-8px);
+      }
+      
+      .service-card img {
+        width: 100%;
+        border-radius: 12px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+      
+      .service-card h3 {
+        font-size: 22px;
+        color: #a87c5f;
+        margin-bottom: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      
+      .service-card ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .service-card ul li {
+        font-size: 16px;
+        color: #252425;
+        font-weight: 500;
+        margin: 6px 0;
+      }
+     

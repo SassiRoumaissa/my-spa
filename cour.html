@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تجربة border-collapse</title>
+    <style>
+        table {
+            width: 90%;
+            height: 70vh;
+            margin: 20px auto;
+            border: 2px solid black;
+            border-collapse: separate;/* جرّب إزالة هذا لترى الفرق */
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/7bc50d0bc83ec9aa1d01dcad9c9e2c3e.jpg" usemap="#example-map" alt="خريطة تفاعلية">
+  
+<map name="example-map">
+  <area shape="rect" coords="34,44,270,350" href="index.html" alt="رابط إلى الصفحة 1">
+  <area shape="circle" coords="337,300,44" href="page2.html" alt="رابط إلى الصفحة 2">
+</map>
+    <abbr  title="Hypertext Markup Language">HTML</abbr>
+    <h2>جدول مع border-collapse</h2>
+    <code>console.log("Hello!");</code>
+    <mark>نص مميز</mark>
+    <dl>
+        <dt>HTML</dt>
+        <dd>لغة ترميز</dd>
+        
+        <dt>CSS</dt>
+        <dd>أداة لتنسيق الصفحات</dd>
+      </dl>
+      
+    <cite>كتاب فن الحرب</cite>
+    <table>
+        <tr>
+            <th>الاسم</th>
+            <th>العمر</th>
+        </tr>
+        <tr>
+            <td>أحمد</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>سارة</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <hr>
+    <hr>
+    <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_DATA" width="600" height="450"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.wikipedia.org/" width="800" height="500"></iframe>
+    <pre>kijkjnhhgtgbhehbtde         
+        hhjhjjjjjjjj
+        jjmmmmmmmmmmmnnnnn
+    </pre>
+    <label for="cars">اختر سيارة:</label>
+    <select id="cars" name="cars">
+      <option value="bmw">BMW</option>
+      <option value="audi">Audi</option>
+      <option value="mercedes">Mercedes</option>
+
+    </select>
+    <label for="cars">اختر سيارة:</label>
+<select id="cars" name="cars">
+  <optgroup label="ألمانية">
+    <option value="bmw">BMW</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+  <optgroup label="يابانية">
+    <option value="toyota">Toyota</option>
+    <option value="nissan">Nissan</option>
+  </optgroup>
+</select>
+
+<dialog id="myDialog">
+    <p>مرحبًا! هذا مربع حوار.</p>
+    <button id="closeBtn">إغلاق</button>
+  </dialog>
+  
+  <button id="openBtn">افتح الحوار</button>
+  
+  <script>
+    const dialog = document.getElementById("myDialog");
+    document.getElementById("openBtn").onclick = () => dialog.showModal();
+    document.getElementById("closeBtn").onclick = () => dialog.close();
+  </script>
+  <details>
+    <summary>انقر هنا لرؤية المزيد</summary>
+    <p>هذا هو المحتوى المخفي الذي يظهر عند التوسيع.</p>
+  </details>
+  
+    
+</body>
+</html>
+

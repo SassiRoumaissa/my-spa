@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="../css/shop.css ">
+</head>
+<body>
+       
+    <header class="header">
+        <img src="../images/logoSpa.png" alt="Spa Logo" style="width: auto;height: 300px;" class="logo">
+        <nav class="info">
+            <a href="index.php">Home</a>
+            <a href="../html/services.html">Services</a>
+            <a href="../html/blog.html">Blog</a>
+           
+            <a href="../html/shop.html">Shop</a>
+            <a href="contact.php">Contacts</a>
+        </nav>
+        <nav class="icons">
+          <a style="color: darkmagenta;" href="../html/cart.html"><i class="fas fa-shopping-cart"></i> </a>
+          <a href="../html/fav.html"><i class="fas fa-heart"></i> </a>
+          <a href="#"><i class="fas fa-user"></i> </a>
+        </nav>
+      </header>
+        <section class="shop-title">
+            <div class="overlay"></div>
+            <h1>Shop</h1>
+          </section>
+          
+
+        
+            <h1 class="title-prd">Our Spa Products</h1>
+        
+        
+          <section class="filter-bar">
+            <button onclick="filterProducts('all')">All</button>
+            <button onclick="filterProducts('oil')">Oils</button>
+            <button onclick="filterProducts('skin')">Skin</button>
+            <button onclick="filterProducts('body')">Body</button>
+            <button onclick="filterProducts('hair')">Hair</button>
+          </section>
+        
+          <section class="products" id="productList">
+            <!-- JS will inject products here -->
+          </section>
+          <footer class="footer">
+            <div class="footer-container">
+          
+             
+              <div class="footer-column">
+                <img class="logo" src="../images/logoSpa.png" style="margin-top: -170px;width:auto;margin-left: -140px;" alt="ROUMI Logo">
+                <p  style="margin-top: -170px;" class="desc">
+                  Relax. Rejuvenate. Repeat.<br>
+                  Discover the ultimate spa experience that awakens your senses and soothes your soul.
+                </p>
+                <div style="margin-top: 30px;" class="social-icons">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-youtube"></i>
+                </div>
+              </div>
+          
+             
+              <div class="footer-column">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> bab elzouer,djorf</p> 
+                <p><i  class="fas fa-envelope"></i>roumaissasassi8@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +213 674668185</p>
+              </div>
+          
+            
+              <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                  <li>Stone Massage</li>
+                  <li>Aromatherapy</li>
+                  <li>Waxing</li>
+                  <li>Body Wraps</li>
+                  <li>Facials</li>
+                </ul>
+              </div>
+          
+           
+              <div class="footer-column">
+                <h3>Latest Posts</h3>
+                <div class="post">
+                  <img src="../images/image-8-150x150-140x140.jpg" alt="">
+                  <div>
+                    <p class="post-title">Spa Rituals for Home</p>
+                    <p class="post-date">11 Apr, 2024</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <img src="../images/image-9-150x150-140x140.jpg" alt="">
+                  <div>
+                    <p class="post-title">Aromatherapy Secrets</p>
+                    <p class="post-date">10 Apr, 2024</p>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          
+           
+          </footer>
+          
+          <div  style="margin-top: -2px;" class="footer-bottom">
+            <p>© 2025 ROUMI SPA & Wellness Center. All Rights Reserved.</p>
+          </div> 
+          <script>
+            const products = [
+  { name: 'Lavender Oil', price: '$19', category: 'oil', img: '../images/LavenderOil.jpg' },
+  { name: 'Rose Body Cream', price: '$24', category: 'body', img: '../images/RoseBodyCream.jpg' },
+  { name: 'Aloe Skin Gel', price: '$15', category: 'skin', img: '../images/AloeSkinGel.jpg' },
+  { name: 'Hair Nourish Serum', price: '$22', category: 'hair', img: '../images/HairNourishSerum.jpg' },
+  { name: 'Jasmine Oil', price: '$20', category: 'oil', img: '../images/JasmineOil.jpg' },
+  { name: 'Body Scrub', price: '$18', category: 'body', img: '../images/BodyScrub.jpg' },
+  { name: 'Face Mask', price: '$12', category: 'skin', img: '../images/FaceMask.jpg' },
+  { name: 'Coconut Oil', price: '$17', category: 'oil', img: '../images/CoconutOil.jpg' },
+  { name: 'Hair Spa Cream', price: '$23', category: 'hair', img: '../images/HairSpaCream.jpg' },
+  { name: 'Green Tea Face Wash', price: '$16', category: 'skin', img: '../images/GreenTeaFaceWash.jpg' },
+  { name: 'Argan Hair Oil', price: '$21', category: 'hair', img: '../images/ArganHairOil.jpg' },
+  { name: 'Shea Body Butter', price: '$26', category: 'body', img: '../images/SheaBodyButter.jpg' },
+  { name: 'Vitamin C Serum', price: '$19', category: 'skin', img: '../images/VitaminCSerum.jpg' },
+  { name: 'Eucalyptus Oil', price: '$18', category: 'oil', img: '../images/EucalyptusOil.jpg' },
+  { name: 'Lavender Body Lotion', price: '$20', category: 'body', img: '../images/LavenderBodyLotion.jpg' },
+  { name: 'Tea Tree Oil', price: '$19', category: 'oil', img: '../images/TeaTreeOil.jpg' },
+  { name: 'Charcoal Face Cleanser', price: '$17', category: 'skin', img: '../images/CharcoalCleanser.jpg' },
+  { name: 'Keratin Hair Mask', price: '$25', category: 'hair', img: '../images/KeratinHairMask.jpg' },
+  { name: 'Aloe Vera Toner', price: '$14', category: 'skin', img: '../images/AloeToner.jpg' },
+  { name: 'Vanilla Body Mist', price: '$21', category: 'body', img: '../images/VanillaMist.jpg' },
+  { name: 'Macadamia Hair Cream', price: '$24', category: 'hair', img: '../images/MacadamiaHairCream.jpg' },
+  { name: 'Night Repair Serum', price: '$27', category: 'skin', img: '../images/NightRepairSerum.jpg' },
+  { name: 'Peppermint Oil', price: '$16', category: 'oil', img: '../images/PeppermintOil.jpg' },
+  { name: 'Body Polish Scrub', price: '$19', category: 'body', img: '../images/BodyPolishScrub.jpg' },
+  { name: 'Hydrating Face Cream', price: '$22', category: 'skin', img: '../images/HydratingFaceCream.jpg' }
+];
+
+        
+           
+
+        
+          
+            const container = document.getElementById('productList');
+          
+            function showProducts(list) {
+              container.innerHTML = '';
+              list.forEach(prod => {
+                container.innerHTML += `
+                  <div class="product" style="background-image: url('${prod.img}'); background-size: cover; background-position: center;">
+                    <div class="product-info">
+                      <h3>${prod.name}</h3>
+                      <p class="price">${prod.price}</p>
+                      <div class="product-actions">
+                        <button class="buy-btn" onclick='addToCart(${JSON.stringify(prod)})'><i class="fas fa-plus"></i></button>
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                `;
+              });
+            }
+          
+            function addToCart(product) {
+              let cart = JSON.parse(localStorage.getItem("cart")) || [];
+              cart.push(product);
+              localStorage.setItem("cart", JSON.stringify(cart));
+              alert(`${product.name} added to cart!`);
+            }
+          
+            function filterProducts(category) {
+              if (category === 'all') {
+                showProducts(products);
+              } else {
+                const filtered = products.filter(p => p.category === category);
+                showProducts(filtered);
+              }
+            }
+          
+            showProducts(products);
+          </script>
+          
+          
+</body>
+</html>
